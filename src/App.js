@@ -30,7 +30,7 @@ function App() {
     []
   );
 
-  const [data, setData] = useState([]);
+  const [val, setData] = useState([]);
 
   useEffect(() => {
     (async function fetchData () {
@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="App">
-      <Table columns={columns} data={data} />
+      <Table columns={columns} data={val} />
     </div>
   );
 }
