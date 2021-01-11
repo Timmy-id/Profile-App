@@ -34,7 +34,7 @@ function App() {
 
   useEffect(() => {
     (async function fetchData () {
-      const response = await fetch('http://api.enye.tech/v1/challenge/records');
+      const response = await fetch('https://api.enye.tech/v1/challenge/records');
       const res = await response.json(response);
       const val = res.records.profiles;
         setData(val);
